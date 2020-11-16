@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            font-size: 70px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            color: blue;
+            font-style: italic;
+            text-transform: uppercase;
+            text-shadow: 4px -4px 3px blurry;
+        }
+        .clear {
+            height: 70px;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+            margin-left: 400px;
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            color: whitesmoke;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .clear:hover {
+            background-color: red;
+        }
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            margin-top: 30px;
+            font-size: 20px;
+            border: 3px solid;
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            color: whitesmoke;
+        }
+        th,
+        td {
+            vertical-align: top;
+            padding: 20px;
+            border: 3px solid red;
+        }
+        td {
+            font-family: cursive;
+            border: 3px solid red;
+            
+        }
+        span {
+            background-color: green;
+        }
+        @media screen and (max-width: 430px) {
+            header {
+                font-size: 18px;
+                text-align: center;
+            }
+            .clear {
+                margin-left: 95px;
+                height: 30px;
+                width: 100px;
+            }
+            table {
+                font-size: 16px;
+            }
+            th,
+            td {
+                vertical-align: top;
+                padding: 0px;
+            }    
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>My Personal Timetable</header>
+    <button class="clear">Edit table</button>
+    <table>
+        <thead>
+            <th scope="col">Time/Days Of The Week</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">7:00am-8:00am</th>
+                <td>set the daily goal</td>
+                <td>set the daily goal</td>
+                <td>set the daily goal</td>
+                <td>set the daily goal</td>
+                <td>set the daily goal</td>
+                <td>set the daily goal</td>
+                <td>set the daily goal</td>
+            </tr>
+            <tr class="second">
+                <th scope="row">8:00am-8:30am</th>
+                <td><span>Breakfast</span></td>
+                <td><span>Breakfast</span></td>
+                <td><span>Breakfast</span></td>
+                <td><span>Breakfast</span></td>
+                <td><span>Breakfast</span></td>
+                <td><span>Breakfast</span></td>
+                <td><span>Breakfast</span></td>
+            </tr>
+            <tr class="third">
+                <th scope="row">8:30am-12:00pm</th>
+                <td>code</td>
+                <td>code</td>
+                <td>code</td>
+                <td>code</td>
+                <td>code</td>
+                <td>rest</td>
+                <td>rest</td>
+            </tr>
+            <tr class="fourth">
+                <th scope="row">12:00pm-2:00pm</th>
+                <td>Draw</td>
+                <td>Draw</td>
+                <td>Draw</td>
+                <td>Draw</td>
+                <td>Draw</td>
+                <td>Draw</td>
+                <td>Draw</td>
+            </tr>
+            <tr class="fifth">
+                <th scope="row">2:00pm-2:30pm</th>
+                <td>Prayer</td>
+                <td>Prayer</td>
+                <td>Prayer</td>
+                <td>Prayer</td>
+                <td>Prayer</td>
+                <td>Prayer</td>
+                <td>Prayer</td>
+            </tr>
+            <tr class="six">
+                <th scope="row">2:30pm-4:00pm</th>
+                <td><span>Social Media</span></td>
+                <td><span>Social Media</span></td>
+                <td><span>Social Media</span></td>
+                <td><span>Social Media</span></td>
+                <td><span>Social Media</span></td>
+                <td><span>Social Media</span></td>
+                <td><span>Social Media</span></td>
+            </tr>
+            <tr class="seventh">
+                <th scope="row">4:00pm-4:30pm</th>
+                <td>Prayer</td>
+                <td>Prayer</td>
+                <td>Prayer</td>
+                <td>Prayer</td>
+                <td>Prayer</td>
+                <td>Prayer</td>
+                <td>Prayer</td>
+            </tr>
+            <tr class="seventh">
+                <th scope="row">4:30pm-7:00pm</th>
+                <td>Read Books</td>
+                <td>Read Books</td>
+                <td>Read Books</td>
+                <td>Read Books</td>
+                <td>Read Books</td>
+                <td>Read Books</td>
+                <td>Read Books</td>
+            </tr>
+            <tr>
+            <th scope="row">7:00pm-7:20pm</th>
+            <td>Prayer</td>
+            <td>Prayer</td>
+            <td>Prayer</td>
+            <td>Prayer</td>
+            <td>Prayer</td>
+            <td>Prayer</td>
+            <td>Prayer</td>
+            </tr>
+            <tr>
+            <th scope="row">7:20pm-8:00pm</th>
+            <td><span>Dinner</span></td>
+            <td><span>Dinner</span></td>
+            <td><span>Dinner</span></td>
+            <td><span>Dinner</span></td>
+            <td><span>Dinner</span></td>
+            <td><span>Dinner</span></td>
+            <td><span>Dinner</span></td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
